@@ -61,6 +61,82 @@ body{
 
 /* 모달창 */
 /* top버튼 */
+.top-botton{
+    position: fixed;
+    right: 30px;
+    bottom: 60px;
+    z-index: 99999; /*제일 위에 있어야 함*/
+    display: flex; /*부모한테 줘야함*/
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.chat-btn{
+    animation: updown 1.5s infinite;
+}
+/* 애니메이션 효과  */
+@keyframes updown{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+.chat-btn span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    background-color: #fff;
+    border-radius: 23px;
+    padding: 8px 10px;
+    text-align: center;
+    box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+    top: 34px;
+    left: -186px;
+    display: none;
+    
+}
+
+.chat-btn:hover span{
+    display: block;
+}
+
+.shop-btn{
+    position: relative;
+    display: block;
+    width: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 500;
+    text-align: center;
+    box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+}
+.top-btn{ /* 태그를 #을 쓸 경우 누르면 상단으로 이동한다*/
+    width: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    background-color: #ed1c24;
+    text-align: center;
+    box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+}
+
+.top-btn img{
+    transform: rotate(180deg);
+}
+.top-btn img.up{
+    transform: rotate(0deg);
+}
+
 /* 전체 레이아웃 */
 .wrap{
     position: relative;
