@@ -26,14 +26,15 @@ window.onload = function () {
           top: 2777,
           behavior: "smooth",
         });
-      } else {
+      } 
+      else {
         window.scrollTo({
           top: 0,
           behavior: "smooth",
         });
       }
     });
-    
+
     //화살표 이미지 회전
     const topBtnImg = document.getElementById("top-btn-img");
     window.addEventListener("scroll", function (scTop) {
@@ -47,4 +48,5 @@ window.onload = function () {
     });
   
   };
+  
   
